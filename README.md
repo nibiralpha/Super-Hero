@@ -41,10 +41,6 @@ yarn start
 
 Then open [http://localhost:3000/](http://localhost:3000/) on your web browser.
 
-### Testing
-
-1. Run `npm test` for test.
-
 ## Deploying
 
 For deployment, run `npm run build` and upload `build/` to your server.
