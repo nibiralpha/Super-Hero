@@ -6,7 +6,7 @@ import HeroCard from '../../Components/HeroCard';
 import './index.less';
 import { Col, Row } from 'antd';
 import useTeam from '../../hooks/useTeam';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 
 const Search = (props: any) => {
   useEffect(() => {}, []);
