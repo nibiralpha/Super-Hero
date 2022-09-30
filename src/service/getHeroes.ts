@@ -13,7 +13,7 @@ const getHeroes = () => {
     return async (dispatch: any) => {
         try {
             dispatch(startLoading())
-            const response: AxiosResponse = await axios.get<HeroListResponse>(`${API_END_POINT}/search/a`)
+            const response: AxiosResponse = await axios.get<HeroListResponse>(`${API_END_POINT}/search/b`)
             dispatch(setHeroes(response.data.results))
             dispatch(stopLoading())
         } catch (error) {
