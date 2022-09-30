@@ -1,0 +1,87 @@
+@import 'settings';
+@import 'tools';
+
+@module: header;
+
+.@{module} {
+  padding: 12px;
+}
+
+.header-wrapper {
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px dotted #dcdcdc;
+  display: flex;
+  height: 13vh;
+  padding: 0 50px;
+  // box-shadow: 0 2px 4px 0 rgba(176, 176, 176, 0.5);
+}
+
+.left-menu-item {
+  padding: 0 20px;
+}
+
+.left-menu-logo {
+  font-size: 20px;
+}
+
+.mobile-menu {
+  width: 100%;
+}
+
+.mobile-menu .left-menu-logo {
+  font-size: 16px;
+  text-align: center;
+}
+
+.left-menu-item .active {
+  border-bottom: 3px solid @secondary;
+  padding-bottom: 6px;
+}
+
+.filter-text {
+  color: @major-2nd;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-wrapper {
+  padding: 0 15px;
+  // display: flex;
+  width: 100%;
+  // justify-content: space-between;
+}
+
+.fixed-position {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  // .filter-text {
+  //   display: none !important;
+  // }
+
+  // .nav-bar-menu-items {
+  //   display: none;
+  // }
+
+  .pc-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .header-wrapper {
+    padding: 0 0;
+  }
+
+  .ant-drawer-title {
+    text-align: center !important;
+  }
+}
