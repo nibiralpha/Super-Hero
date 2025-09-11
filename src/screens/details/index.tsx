@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Header from '@layout/header';
+import Header from '../../layout/header';
 
 import './index.less';
 import { Col, Modal, Row, Spin, Switch } from 'antd';
