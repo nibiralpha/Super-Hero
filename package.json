@@ -12,7 +12,8 @@
     "lint-css": "stylelint './src/**/*.less'",
     "lint-css:fix": "stylelint './src/**/*.less' --fix",
     "start-js": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "react-scripts build",
+    "build:ci": "ESLINT_NO_DEV_ERRORS=true react-scripts build",
     "start-build": "http-server ./build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
