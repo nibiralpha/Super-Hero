@@ -1,4 +1,4 @@
-import { API_END_POINT } from '@constants/general';
+import { API_END_POINT } from '../constants/general';
 import axios, { AxiosResponse } from 'axios';
 import { setHeroes, startLoading, stopLoading } from '../../src/store/heroes';
 import HeroModel from "../model/Hero.model";
