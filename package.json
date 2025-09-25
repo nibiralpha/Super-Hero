@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "start": "npm-run-all -p prettier-watch stylelint-watch start-js",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && npm-run-all -p prettier-watch stylelint-watch start-js",
     "prettier-watch": "onchange '**/*.tsx' '**/*.less' -- prettier --write {{changed}}",
     "stylelint-watch": "onchange '**/*.less' -- stylelint --fix {{changed}}",
     "stylelint-check": "stylelint-config-prettier-check",
