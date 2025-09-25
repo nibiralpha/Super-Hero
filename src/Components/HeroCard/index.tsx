@@ -54,7 +54,8 @@ const HeroCard = (props: Props) => {
       <div className="hero-card-wrapper">
         <Link to={`/hero/details/${props.hero.id}`}>
           <div className="hero-card-img">
-            <img src={props.hero?.image?.url} />
+            <img src={"/images/card.jpg"} />
+            {/* <img src={props.hero?.image?.url} /> */}
           </div>
         </Link>
         <div className="hero-card-content">

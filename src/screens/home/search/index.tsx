@@ -141,7 +141,7 @@ const Search = ({ getHeroesData }: any) => {
             </div>
           ) : (
             <div>
-              <Row gutter={[25, 25]}>
+              {/* <Row gutter={[25, 25]}> */}
                 <Row gutter={[25, 25]}>
                   {filterData().map((data: HeroModel) => (
                     <Col key={data.id} md={{ span: 6 }} sm={{ span: 24 }}>
@@ -149,7 +149,7 @@ const Search = ({ getHeroesData }: any) => {
                     </Col>
                   ))}
                 </Row>
-              </Row>
+              {/* </Row> */}
             </div>
           )}
         </div>

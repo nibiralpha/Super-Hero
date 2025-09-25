@@ -59,7 +59,8 @@ const Details = (props: any) => {
           <Row>
             <Col md={{ span: 11 }} sm={{ span: 24 }}>
               <div className="left-side">
-                <img className="full-image" src={`${heroDetails?.image?.url}`} />
+                <img className="full-image" src={"/images/card.jpg"} />
+                {/* <img className="full-image" src={`${heroDetails?.image?.url}`} /> */}
                 <div className="action-container">
                   <div className="hero-name size-40 white primary">{heroDetails?.name}</div>
                   <div className="card-content-actions flex flex-justify-center mt-20">

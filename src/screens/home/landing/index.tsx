@@ -20,7 +20,7 @@ const Landing = (props: any) => {
             </div>
 
             <div className="landing-items flex">
-              <div className="landing-item text-right">
+              <div className="landing-item text-center">
                 <img className="hero-img" src="/images/all-heroes.png" />
               </div>
               <div className="landing-item flex flex-center">
